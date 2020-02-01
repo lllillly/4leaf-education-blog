@@ -1,0 +1,32 @@
+extends layouts/main.pug
+include mixins/portBox 
+
+block content
+    .a_box
+        .a_box__col-1
+            .col-1__left
+                .col-1__left__avatar
+            .col-1__right
+                table.a_table
+                    tr.table__row
+                        td.table__row__data NAME
+                        td.table__row__data : BANG HYO JIN
+                    tr.table__row
+                        td.table__row__data DEPT
+                        td.table__row__data : 4LEAF SOFTWARE
+                    tr.table__row
+                        td.table__row__data E-MAIL
+                        td.table__row__data : qkdgywls030503@gmail.com
+                    tr.table__row
+                        td.table__row__data MOBILE
+                        td.table__row__data : 010-5187-8859
+                    tr.table__row
+                        td.table__row__data GIT
+                        td.table__row__data : https://qkdgywls0503.github.io
+                    
+        .a_box__col-2
+            +portBox
+            +portBox
+            +portBox
+            +portBox
+            +portBox

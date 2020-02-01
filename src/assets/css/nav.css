@@ -1,0 +1,56 @@
+@keyframes menuSlide {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navHover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 600px;
+}
+
+.box .box__content {
+  margin-left: 70px;
+}
+
+.box .box__nav {
+  font-size: 20px;
+  font-family: "Schoolbell", cursive;
+  width: 15%;
+  height: 700px;
+  background-color: rgba(212, 103, 81, 0.6);
+  border-top-right-radius: 7px;
+}
+
+.box .box__nav .nav {
+  padding: 40px;
+}
+
+.box .box__nav .nav .nav__items {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.box .box__nav .nav .nav__items:hover {
+  animation: navHover 1.2s forwards;
+}
+
+.box .box__nav .nav .nav__items a {
+  text-decoration: none;
+  color: #d93240;
+}

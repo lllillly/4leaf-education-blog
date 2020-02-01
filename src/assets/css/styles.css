@@ -1,0 +1,22 @@
+@import "./nav.css";
+@import "./reset.css";
+@import "./home.css";
+@import "./miniboard.css";
+@import "./about.css";
+@import "./portBox.css";
+
+@keyframes initStart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  overflow: hidden;
+  background-image: url(../img/바탕.png);
+  background-size: cover;
+}

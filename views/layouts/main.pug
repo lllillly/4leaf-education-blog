@@ -1,0 +1,14 @@
+include ../mixins/nav
+
+doctype html
+html
+    head
+        title BLOG by BHJ
+        link(rel="stylesheet", href="css/styles.css")
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    body
+        .box
+            .box__nav
+                +nav
+            .box__content
+                block content
